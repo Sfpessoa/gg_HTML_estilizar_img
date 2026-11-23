@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(201, 143, 37);
+}
+figure.foto {
+    /* criando uma borda com sombra */
+    position: relative;
+    /* tamanho da borda de acordo com tamanho da img */
+    width: 500px;
+    height: auto;
+    border: 5px solid red;
+    box-shadow: 5px 5px 5px black;
+}
+figure.foto figcaption {
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: lightblue;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto:hover figcaption {
+    opacity: 1;
+}
